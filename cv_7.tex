@@ -1,0 +1,193 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.11 (19/6/14)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same 
+% directory as this .tex file. These files provide the resume style and themes 
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------
+
+\documentclass[11pt,letterpaper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+
+\moderncvstyle{classic} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{black} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+
+\usepackage[scale=0.75]{geometry} % Reduce document margins
+%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+%----------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------
+
+\firstname{Jim} % Your first name
+\familyname{Notwell} % Your last name
+
+% All information in this block is optional, comment out any lines you don't need
+% \title{Curriculum Vitae}
+\address{640 Coleman Ave, Apt 5}{Menlo Park, CA 94025}
+\mobile{(+1) 614 403 1661}
+\email{jimnotwell@gmail.com}
+%\homepage{https://www.linkedin.com/pub/daniele-perrotta/64/5b9/794} {staff.org.edu/$\sim$jsmith} % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
+%\extrainfo{additional information}
+%\quote{"A witty and playful quotation" - John Smith}
+
+%----------------------------------------------------------------
+
+\begin{document}
+
+\makecvtitle % Print the CV title
+
+%----------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------
+
+\section{Education}
+
+\cventry{2014--2016}{Ph.D. in Computer Science}{Stanford University}{Stanford, CA}{}{
+\begin{itemize}
+\item{Advised by Professor Gill Bejerano}
+\item{Thesis: \emph{Exploring the Genomic Landscape of Human Disease}}
+\end{itemize}}
+\cventry{2010--2014}{M.S. in Computer Science}{Stanford University}{Stanford, CA}{}{}
+\cventry{2006--2010}{B.S. \emph{summa cum laude} in Computer Science}{University of Notre Dame}{}{Notre Dame, IN}{\begin{itemize}
+\item{GPA 3.95 / 4.0 (Major 4.0 / 4.0)}\end{itemize}}  % Arguments not required can be left empty
+
+
+%----------------------------------------------------------------
+%	AWARDS SECTION
+%----------------------------------------------------------------
+\section{Awards}
+
+\cventry{2013 -- 2016}{SIGF Affymetrix Bio-X Fellowhip}{Stanford University}{}{}{\begin{itemize}
+\item{20 awarded across all graduate schools}
+\end{itemize}}
+
+\cventry{2010 -- 2013}{Graduate Research Fellowship}{National Science Foundation}{}{}{}
+
+\cventry{2010}{Top Gun Award}{University of Notre Dame}{}{}{\begin{itemize}
+\item{Awarded to the senior student-athlete with the
+highest GPA}
+\end{itemize}}
+
+\cventry{2010}{Outstanding Computer Science Senior Award}{University of Notre Dame}{}{}{\begin{itemize}
+\item{Awarded to 2 computer science students}
+\end{itemize}}
+
+\cventry{2010}{Reverend Thomas A. Steiner Prize}{University of Notre Dame}{}{}{\begin{itemize}
+\item{Awarded to 6 students in the school of engineering}
+\end{itemize}}
+
+\cventry{2006}{Fourth Place in Teams Award}{Intel International Science \& Engineering Fair}{}{}{}
+
+%----------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------
+
+\section{Work Experience}
+
+
+\cventry{2017 -- Present}{Head of Informatics}{Circuit Therapeutics}{Menlo Park CA}{}{\begin{itemize}
+\item{Delivered gene lists from which many validated targets were selected and licensed to pharmaceutical partners}
+\item{Contributed to the gene therapy program by designing a promoter that could be easily packaged in a virus and targeted a specific population of neurons}
+\item{Managed a team of one full-time bioinformatics engineer, two remote system administrators, and one machine learning consultant.} 
+\end{itemize}}
+
+\cventry{2016 -- 2017}{Computational Scientist}{Circuit Therapeutics}{Menlo Park CA}{}{\begin{itemize}
+\item{Implemented a single-cell RNA-seq (scRNA-seq) pipeline for processing SMART-seq, DROP-seq, and 10X Chromium libraries}
+\item{Addressed the problem of 3' bias in scRNA-seq technologies, which enabled measuring previously missing genes and intergrating samples from different technologies}
+\end{itemize}}
+
+\cventry{Fall 2011, Winter 2013}{Teaching Assistant}{Stanford University}{Stanford, CA}{}{Taught review sessions, held office hours, wrote and graded homework assignments, and designed final projects for \emph{Computational Tour of the Human Genome}, a 50 student graduate-level course on current topics in human genomics.}
+
+\cventry{Fall 2009}{Teaching Assistant}{University of Notre Dame}{Notre Dame, IN}{}{Led laboratory sessions, held office hours, and graded projects for \emph{Fundamentals of Computing}, a 30 student undergraduate introduction to programming course.}
+
+\cventry{Summer 2009}{Bing Program Manager Intern}{Microsoft}{Redmond, WA}{}{\begin{itemize}
+\item{Managed an international team of developers to build a debugger for Bing's back-end}
+\item{Integrated a debugger into pre-existing tools to increase its visibility}
+\item{Extracted Bing usage statistics and identified key markets for growth}
+\end{itemize}}
+
+%----------------------------------------------------------------
+%	RESEARCH EXPERIENCE SECTION
+%----------------------------------------------------------------
+
+\section{Research Experience}
+
+\cventry{2010 -- 2016}{Research Assistant}{Bejerano Lab}{Stanford, CA}{}{\begin{itemize}
+\item{Used ChIP-seq, ATAC-seq, RNA-seq, and microarray experiments to link \emph{cis}-regulation in the developing neocortex to evolution and autism (jointly mentored by Sue McConnell)}
+\item{Enabled non-coding disease-associated mutations from humans to be studied in zebrafish through finding remote homologies (collaboration with the Mourrain Lab)}
+\end{itemize}}
+
+\cventry{2008 -- 2010}{Research Assistant}{DIAL Laboratory}{Notre Dame, IN}{}{\begin{itemize}
+\item{Conceived an alternative to Google's MapReduce framework for processing large data sets in a mobile environment}
+\item{Using patient data and genetic similarities, constructed disease interaction networks to predict unknown disease interactions}
+\item{Investigated improving classifier performance on class-imbalanced data sets}
+\end{itemize}}
+
+%----------------------------------------------------------------
+%	PUBLICATIONS
+%----------------------------------------------------------------
+
+\section{Publications}
+
+\cventry{2018}{{\normalfont Hanson Ho, Matt De Both, Ashley Siniard, Sasha Sharma, \textbf{James H Notwell}, Michelle Wallace, Dino P Leone, Amy Nguyen, Eric Zhao, Hannah Lee, Daniel Zwilling, Kimberly Thompson, Steven P Braithwaite, Matthew J Huentelman, Thomas Portmann. A Guide To Single-Cell Transcriptomics In Adult Rodent Brain: The Medium Spiny Neuron Transcriptome Revisited. \emph{Frontiers in Cellular Neuroscience}}}{}{}{}{}
+
+\cventry{2018}{{\normalfont Romain Madelaine*, \textbf{James H Notwell}*, Gemini Skariah, Caroline Halluin, Charles C Chen, Gill Bejerano, Philippe Mourrain. A Screen for Deeply Conserved Non-Coding GWAS SNPs Uncovers a MIR-9-2 Functional Mutation Associated to Retinal Vasculature Defects in Human. \emph{Nucleic Acids Research} (*Equal contribution)}}{}{}{}{}
+
+\cventry{2017}{{\normalfont Romain Madelaine, Steven A Sloan, Nina Huber, \textbf{James H Notwell}, Louis C Leung, Gemini Skariah, Caroline Halluin, Sergiu P Pasca, Gill Bejerano, Mark A Krasnow, Ben A Barres, Philippe Mourrain. MicroRNA-9 Couples Brain Neurogenesis and Angiogenesis. \emph{Cell Reports}}}{}{}{}{}
+
+\cventry{2016}{{\normalfont \textbf{James H Notwell}, Whitney E Heavner, Siavash Fazel Darbandi, Sol Katzman, William L McKenna, Christian F Ortiz-Londono, David Tastad, Matthew J Eckler, John LR Rubenstein, Susan K McConnell, Bin Chen, Gill Bejerano. TBR1 Regulates Autism Risk Genes in the Developing Neocortex. \emph{Genome Research}}}{}{}{}{}
+
+\cventry{2016}{{\normalfont \textbf{James H Notwell}, Tisha Chung, Whitney Heavner, Gill Bejerano. A Family of Transposable Elements Co-opted into Developmental Enhancers in the Mouse Neocortex. \emph{Nature Communications}}}{}{}{}{}
+
+\cventry{2013}{{\normalfont Aaron M Wenger*, Shoa L Clarke*, \textbf{James H Notwell}*, Tisha Chung, Geetu Tuteja, Harendra Guturu, Bruce T Schaar, Gill Bejerano. The Enhancer Landscape During Early Neocortical Development Reveals Patterns of Dense Regulation and Co-option. \emph{PLoS Genetics} (*Equal contribution)}}{}{}{}{\textbf{Nature Genetics research highlight.}}
+
+\cventry{2014}{{\normalfont Michael Hiller, Saatvik Agarwal, \textbf{James H Notwell}, Ravi Parikh, Harendra Guturu, Aaron M Wenger, Gill Bejerano. Computational Methods to Detect Conserved Non-genic Elements in Phylogenetically Isolated Genomes: Application to Zebrafish. \emph{Nucleic Acids Research}}}{}{}{}{}
+
+\cventry{2009}{{\normalfont Sean McRoskey*, \textbf{James H Notwell}*, Nitesh V. Chawla, Christian Poellabauer. Mining in a Mobile Environment. \emph{International Workshop on Knowledge Discovery from Sensor Data (SensorKDD)}}}{}{}{}{\textbf{Best student paper award.}}
+
+%----------------------------------------------------------------
+%	COVER LETTER
+%----------------------------------------------------------------
+
+% To remove the cover letter, comment out this entire block
+
+%\clearpage
+
+%\recipient{HR Department}{Corporation\\123 Pleasant Lane\\12345 City, State} % Letter recipient
+%\date{\today} % Letter date
+%\opening{Dear Sir or Madam,} % Opening greeting
+%\closing{Sincerely yours,} % Closing phrase
+%\enclosure[Attached]{curriculum vit\ae{}} % List of enclosed documents
+
+%\makelettertitle % Print letter title
+
+%\lipsum[1-3] % Dummy text
+
+%\makeletterclosing % Print letter signature
+
+%----------------------------------------------------------------
+
+\end{document}
+
+
+
